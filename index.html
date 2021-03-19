@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloning Blibli</title>
+  <link rel="stylesheet" href="assets/css/flickity.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <ul>
+      <li>
+        <div class="nav-dropdown">
+          <a href="#"><img src="assets/img/icon_hp.svg">
+            Download Aplikasi Blibli
+            <img src="assets/img/icon_arrow_down.svg" style="max-height: 16px;"></a>
+          <ul style="text-align: center;">
+            <li>
+              <span style="display: inline-block; padding: 0 5px 0 5px;">
+                <a href="#" style="padding: 0;"><img src="assets/img/icon_android.png" height="30px"
+                    style="padding-right: 5px;"><br />Android</a>
+              </span>
+              <span style="display: inline-block; padding: 0 5px 0 5px;">
+                <a href="#" style="padding: 0;"><img src="assets/img/icon_apple.png" height="30px"
+                    style="padding-right: 5px;"><br />IoS</a>
+              </span>
+            </li>
+            <li><a><em>Unduh Sekarang!</em></a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="nav-dropdown">
+          <a href="#"><img src="assets/img/icon_headset.svg">
+            Bantuan 24/7
+            <img src="assets/img/icon_arrow_down.svg" style="max-height: 16px;"></a>
+          <ul>
+            <li><a href="#">Pembayaran</a></li>
+            <li><a href="#">Pengiriman</a></li>
+            <li><a href="#">Pengembalian</a></li>
+            <li><a href="#">Panduan Lainnya</a></li>
+            <div>
+              <li><a>Bantuan 24/7</a></li>
+              <li><a><img src="assets/img/icon_telp.png" style="padding-right: 10px;">0804 1 871 871</a>
+              </li>
+              <li><a><img src="assets/img/icon_email.png" style="padding-right: 10px;">customer.cara@blibli.com</a></li>
+            </div>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul style="margin-left: auto;">
+      <li><a href="#">Jual di Blibli</a></li>
+      <li><a href="#">Blibli Rewards</a></li>
+      <li><a href="#">Cek daftar pesanan</li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img class="logo" src="assets/img/logo_blibli.svg" alt="logo">
+    <div class="icon_kategori">
+      <a href="#" id="icon_kategori"><img src="assets/img/icon_kategori.svg" class="icon">Kategori</a>
+      <div class="segitiga_atas" id="id_segitiga_atas"></div>
+      <div class="bar_list_kategori" id="id_bar_list_kategori">
+        <a href="#">
+          <div class="list_kategori" id="id_list_kategori"><img src="assets/img/icon_kategori/icon_semua.svg">Galeri
+            Indonesia
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi Galeri Indonesia</p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">BlibliMart</a><br />
+                      <a href="#">Kebutuhan Ibu & Anak</a><br />
+                      <a href="#">Menu Restoran</a></p>
+
+                    <p><a href="#">Fashion Pria</a><br />
+                      <a href="#">Bawahan</a></p>
+
+                    <p><a href="#">Fashion Wanita</a></p>
+                    <p><a href="#">Handphone & Tablet</a></p>
+                    <p><a href="#">Home & Living</a></p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Ibu & Anak</a><br />
+                      <a href="#">Gift Set & Perlengkapan...</a><br />
+                      <a href="#">Fashion Anak</a></p>
+
+                    <p><a href="#">Kamera</a></p>
+                    <p><a href="#">Kesehatan & Kecantikan</a><br />
+                      <a href="#">Kutek & Perawatan Kuku</a><br />
+                      <a href="#">Perangkat Kecantikan</a></p>
+
+                    <p><a href="#">Komputer & Laptop</a></p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Mainan & Video Games</p>
+                    <p><a href="#">Olahraga & Aktivitas Luar Ruang</a></p>
+                    <p><a href="#">Otomotif</a></p>
+                    <p><a href="#">Peralatan Elektronik</a></p>
+                    <p><a href="#">Bangga Buatan Indonesia</a></p>
+                    <p><a href="#">Ekraf Jabar Great Sale</a></p>
+                  </div>
+                </div>
+                <div class="konten w30">
+                  <img src="assets/img/banner_kategori.webp">
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_hp_tablet.webp">Handphone &
+            Tablet
+            <div class="list_kategori_konten">
+              <p>Promo & Koleksi BlibliMart</p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#"><b>Go Local Bandung BlibliMart</b></a></p>
+                    <p><a href="#"><b>Go Local Makassar BlibliMart</b></a></p>
+                    <p><a href="#"><b>Go Local Medan BlibliMart</b></a></p>
+                    <p><a href="#"><b>Go Local Surabaya BlibliMart</b></a></p>
+                    <p><a href="#"><b>Go Local Joglosemar BlibliMart</b></a></p>
+                    <p><a href="#"><b>Go Local Denpasar BlibliMart</b></a></p>
+                    <p><a href="#"><b>21+</b></a><br />
+                      <a href="#">Minuman Alkohol</a><br />
+                      <a href="#">Kesehatan Seksual</a><br />
+                      <a href="#">Liquid Vape</a></p><br />
+                    <a href="#">Pengganti Rokok</a></p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Popok Bayi & Anak</a><br />
+                      <a href="#">Perwatan MMandi & Kulit...<br /></a>
+                      <a href="#">Pembersih Alat Makan A</a></p>
+
+                    <p><a href="#"><b>Perawatan Kulit Tubuh</b></a><br />
+                      <a href="#">Perawatan Kulit Wajah</a><br />
+                      <a href="#">Perawatan Kulit Pria</a><br />
+                      <a href="#">Perawatan Kulit Badan</a><br />
+                      <a href="#">Pembalut & Popok Dew...</a><br />
+                      <a href="#">Kesehatan Rambut</a><br />
+                      <a href="#">Kesehatan Mulut & Gigi="#"></a><br />
+                    </p>
+                    <p><a href="#">Minuman</a><br />
+                      <a href="#">Teh</a><br />
+                      <a href="#">Susu</a><br />
+                      <a href="#">Sirup & Madu</a><br />
+                      <a href="#">Minuman Stamina</a><br />
+                    </p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Bahan, Kue, Roti & Agar...</a></p>
+
+                    <p><a href="#"><b>Cleareance Sale - BlibliMart</a></b><br />
+                      <a href="#">Cleareance Sale -</a><br />
+                      <a href="#">Cleareance Sale -</a><br />
+                      <a href="#">Cleareance Sale -</a><br />
+                      <a href="#">Cleareance Sale -</a><br />
+                    </p>
+                    <p><a href="#"><b>Produk Halalt</a></b><br />
+                      <a href="#">Snack Halal</a><br />
+                      <a href="#">Makanan Import Halal</a><br />
+                      <a href="#">Kebutuhan Anak Halal</a><br />
+                      <a href="#">Bahan Makanan Halal</a><br />
+                      <a href="#">Perawatan Kulit Tubuh H...</a><br />
+                      <a href="#">Sarapan Sehat Halal</a><br />
+                    </p>
+                    <p><a href="#"><b>Makanan Restoran</a></b></p>
+                  </div>
+                </div>
+                <div class="konten w30">
+                  <img src="assets/img/banner_kategori2.webp">
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_bliblimart.webp">BlibliMart
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_semua.svg">Olah Raga & Aktivitas
+            Luar RUang
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Komputer &
+            Laptop
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_hp_tablet.webp">Kamera
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Mainan & Video
+            Game
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Peralatan
+            Elektronik
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Fashion Pria
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Home & Living
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Fashion Wanita
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Ibu & Anak
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_ticket&voucher.webp">Ticket &
+            Voucher
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_elektronik.webp">Keshatan &
+            Kecantikan
+            <div class="list_kategori_konten" id="id_list_kategori_konten">
+              <p>Promo & Koleksi </p>
+              <hr />
+              <div class="list_kategori_konten_teks">
+                <div class="konten w70">
+                  <div class="col">
+                    <p><a href="#">Title 1</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 2</p>
+                  </div>
+                  <div class="col">
+                    <p><a href="#">Title 3</p>
+                  </div>
+                </div>
+                <div class="konten w30"><img src="#"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_otomotif.webp">Otomotif</div>
+        </a>
+        <a href="#">
+          <div class="list_kategori"><img src="assets/img/icon_kategori/icon_travel.webp">Tour & Travel</div>
+        </a>
+      </div>
+
+    </div>
+    <span style="margin-top: 10px;">
+      <span class="search_bar">
+        <div class="cari_kategori" id="cari_kategori">
+          Semua Kategori <img src="assets/img/icon_arrow_down_biru.svg" class="icon_arrow_biru" id="id_icon_arrow_biru">
+        </div>
+        <div class="cari_kategori_bar_konten" id="id_cari_kategori_bar_konten">
+          <div class="title">Cari di Kategori...</div>
+          <div class="ckbk_teks">
+            <div class="ckbk_teks_item"><a href="#">Semua Kategori</a></div>
+            <div class="ckbk_teks_item"><a href="#">Komputer & Laptop</a></div>
+            <div class="ckbk_teks_item"><a href="#">Fashion Wanita</a></div>
+            <div class="ckbk_teks_item"><a href="#">Galeri Indonesia</a></div>
+            <div class="ckbk_teks_item"><a href="#">Kamera</a></div>
+            <div class="ckbk_teks_item"><a href="#">Ibu & Anak</a></div>
+            <div class="ckbk_teks_item"><a href="#">Blibli Mart</a></div>
+            <div class="ckbk_teks_item"><a href="#">Mainan & Video Games</a></div>
+            <div class="ckbk_teks_item"><a href="#">Tiket & Voucher</a></div>
+            <div class="ckbk_teks_item"><a href="#">Handphone & Tablet</a></div>
+            <div class="ckbk_teks_item"><a href="#">Peralatan Elektronik</a></div>
+            <div class="ckbk_teks_item"><a href="#">Kesehatan & Kecantikan</a></div>
+            <div class="ckbk_teks_item"><a href="#">Handphone & Tablet</a></div>
+            <div class="ckbk_teks_item"><a href="#">Peralatan Elektronik</a></div>
+            <div class="ckbk_teks_item"><a href="#">Kesehatan & Kecantikan</a></div>
+            <div class="ckbk_teks_item"><a href="#">Handphone & Tablet</a></div>
+            <div class="ckbk_teks_item"><a href="#">Peralatan Elektronik</a></div>
+            <div class="ckbk_teks_item"><a href="#">Kesehatan & Kecantikan</a></div>
+          </div>
+        </div>
+        <span class="vr"></span>
+        <input type="text" placeholder="Kamu lagi cari apa?">
+        <a href="#"><span class="icon_search"><img src="assets/img/icon_search.svg"></span></a>
+      </span>
+      <br />
+      <span class="search_bar_recomend">
+        <a href="#">Cardigan Murah</a> |
+        <a href="#">Launching Osmo Indonesia</a> |
+        <a href="#">Gadget Fair</a> |
+        <a href="#">Xiaomi Mi 11</a> |
+        <a href="#">Polygon Urbano 5</a>
+      </span>
+    </span>
+    <div>
+      <div class="tas" id="id_tas">
+        <a href="#"><img src="assets/img/icon_tas.svg"></a>
+        <div class="isi_tas_number">0</div>
+        <div class="segitiga_atas" id="id_segitiga_atas"></div>
+        <div class="bar_isi_tas">
+          <img src="assets/img/image_tas_sepi.png">
+          <div class="title">Lho, Kok Sepi?</div>
+          <p>Mau diisi apa ya Bag sebesar ini? Coba masukkan produk yang sudah kebawa mimpi.</p>
+          <p>Habis belanja bisa dapat poin Blibli Rewards lagi!</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a href="#" class="btn_masuk">Masuk</a>
+      <a href="#" class="btn_daftar">Daftar</a>
+    </div>
+  </header>
+
+  <!-- Flickity HTML init -->
+  <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'">
+        <div class=" gallery-cell" style="background-image: url('assets/img/header1.webp');"></div>
+  <div class="gallery-cell" style="background-image: url('assets/img/header2.webp');"></div>
+  <div class="gallery-cell" style="background-image: url('assets/img/header3.webp');"></div>
+  <div class="gallery-cell" style="background-image: url('assets/img/header4.webp');"></div>
+  <div class="gallery-cell" style="background-image: url('assets/img/header5.webp');"></div>
+  </div>
+
+  <!-- Black_overlay -->
+  <div id="black_overlay" class="black_overlay"></div>
+
+  <!-- Menu Kategori -->
+  <div class="menu_kategori">
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_semua.svg"></div>
+      <div class="menu_kategori_item_text">Semua</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_tagihan_isi_ulang.webp"></div>
+      <div class="menu_kategori_item_text">Tagihan & Isi Ulang</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_travel.webp"></div>
+      <div class="menu_kategori_item_text">Travel</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_listrik_pln.webp"></div>
+      <div class="menu_kategori_item_text">Listrik PLN</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_telkom.webp"></div>
+      <div class="menu_kategori_item_text">Telkom</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_click_and_collect.webp"></div>
+      <div class="menu_kategori_item_text">Click & Collect</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_tukar_tambah.webp"></div>
+      <div class="menu_kategori_item_text">Tukar Tambah</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_ticket&voucher.webp"></div>
+      <div class="menu_kategori_item_text">Ticket & Voucher</div>
+    </div>
+    <div class="menu_kategori_item">
+      <div><img src="assets/img/icon_kategori/icon_bliblimart.webp"></div>
+      <div class="menu_kategori_item_text">BlibliMart</div>
+    </div>
+    <div class="menu_kategori_arrow_left">
+      <img src="assets/img/icon_kategori/icon_arrow_left.svg">
+    </div>
+    <div class="menu_kategori_arrow_right">
+      <img src="assets/img/icon_kategori/icon_arrow_right.svg">
+    </div>
+  </div>
+
+  <a href="">
+    <img src="assets/img/cs.jpg" alt="" id="cs-img">
+  </a>
+
+  <div class="container">
+    <!-- Banner 1 -->
+    <img src="assets/img/banner.png" alt="" id="banner1">
+    <!-- End Banner 1 -->
+
+    <!-- Flash Sale Section -->
+    <div class="flash-sale">
+      <div class="fs-top">
+        <div class="fs-title">
+          <img src="assets/img/flash-sale.svg" alt="">
+          <p id="fs-text">Flash Sale</p>
+          <div class="box-time">06</div>
+          <p style="margin-left: 10px; margin-right: -10px;">:</p>
+          <div class="box-time">10</div>
+          <p style="margin-left: 10px; margin-right: -10px;">:</p>
+          <div class="box-time">45</div>
+        </div>
+        <div class="lihat">Lihat Semua ></div>
+      </div>
+
+      <div class="fs-content">
+        <div class="box-fs">
+          <img src="assets/img/serum.png" alt="" id="img-fs">
+          <p id="title-fs-box">WARHAMMER Serum</p>
+          <p id="harga-fs-box">Rp1.000.000</p>
+          <div class="line-green"></div>
+          <div class="line-grey"></div>
+          <p id="stock-title">Stock Tersedia</p>
+        </div>
+        <div class="box-fs">
+          <img src="assets/img/serum.png" alt="" id="img-fs">
+          <p id="title-fs-box">ARMORED Serum</p>
+          <p id="harga-fs-box">Rp900.000</p>
+          <div class="line-orange"></div>
+          <div class="line-grey"></div>
+          <p id="stock-title">Stock Terbatas</p>
+        </div>
+        <div class="box-fs">
+          <img src="assets/img/serum.png" alt="" id="img-fs">
+          <p id="title-fs-box">ATTACK Serum</p>
+          <p id="harga-fs-box">Rp1.200.000</p>
+          <div class="line-green"></div>
+          <div class="line-grey"></div>
+          <p id="stock-title">Stock Tersedia</p>
+        </div>
+        <div class="box-fs">
+          <img src="assets/img/serum.png" alt="" id="img-fs">
+          <p id="title-fs-box">JAW Serum</p>
+          <p id="harga-fs-box">Rp750.000</p>
+          <div class="line-green"></div>
+          <div class="line-grey"></div>
+          <p id="stock-title">Stock Tersedia</p>
+        </div>
+        <div class="box-fs">
+          <img src="assets/img/serum.png" alt="" id="img-fs">
+          <p id="title-fs-box">FEMALE Serum</p>
+          <p id="harga-fs-box">Rp800.000</p>
+          <div class="line-orange"></div>
+          <div class="line-grey"></div>
+          <p id="stock-title">Stock Terbatas</p>
+        </div>
+        <div class="box-fs">
+          <img src="assets/img/serum.png" alt="" id="img-fs">
+          <p id="title-fs-box">FOUNDING Serum</p>
+          <p id="harga-fs-box">Rp1.500.000</p>
+          <div class="line-orange"></div>
+          <div class="line-grey"></div>
+          <p id="stock-title">Stock Terbatas</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Flash Sale Section -->
+
+    <!-- Banner 2 -->
+    <img src="assets/img/banner2.png" alt="" id="banner2">
+    <!-- End Banner 2 -->
+
+    <!-- Penawaran Section -->
+    <div class="penawaran" id="penawaran">
+      <div class="nav-penawaran">
+        <h3>Penawaran dan Layanan</h3>
+        <button class="link-promo active" id="tombol-promo" style="outline:none"> Promo Kategori Lainnya </button>
+        <button class="link-promo" id="tombol-bank" style="outline:none"> Bank </button>
+        <button class="link-promo" id="tombol-spesial" style="outline:none">Spesial di Blibli</button>
+      </div>
+      <div class="konten-penawaran" id="penawaran-section">
+        <img src="assets/img/penawaran/1.webp" alt="" id="img-penewaran">
+        <img src="assets/img/penawaran/2.webp" alt="" id="img-penewaran">
+        <img src="assets/img/penawaran/3.webp" alt="" id="img-penewaran">
+        <img src="assets/img/penawaran/4.webp" alt="" id="img-penewaran">
+        <img src="assets/img/penawaran/5.webp" alt="" id="img-penewaran">
+        <img src="assets/img/penawaran/6.webp" alt="" id="img-penewaran">
+        <img src="assets/img/penawaran/7.webp" alt="" id="img-penewaran">
+      </div>
+      <div class="konten-penawaran" id="bank-section" style="display: none;">
+        <img src="assets/img/bank/1.webp" alt="" id="img-penewaran">
+        <img src="assets/img/bank/2.webp" alt="" id="img-penewaran">
+        <img src="assets/img/bank/3.webp" alt="" id="img-penewaran">
+        <img src="assets/img/bank/4.webp" alt="" id="img-penewaran">
+        <img src="assets/img/bank/5.webp" alt="" id="img-penewaran">
+        <img src="assets/img/bank/6.webp" alt="" id="img-penewaran">
+        <img src="assets/img/bank/7.webp" alt="" id="img-penewaran">
+      </div>
+      <div class="konten-penawaran" id="spesial-section" style="display: none;">
+        <img src="assets/img/spesial/1.webp" alt="" id="img-penewaran">
+        <img src="assets/img/spesial/2.webp" alt="" id="img-penewaran">
+        <img src="assets/img/spesial/3.webp" alt="" id="img-penewaran">
+        <img src="assets/img/spesial/4.webp" alt="" id="img-penewaran">
+        <img src="assets/img/spesial/5.webp" alt="" id="img-penewaran">
+        <img src="assets/img/spesial/6.webp" alt="" id="img-penewaran">
+        <img src="assets/img/spesial/7.webp" alt="" id="img-penewaran">
+      </div>
+    </div>
+    <!-- End Penawaran Section -->
+
+    <!-- Official Store Section -->
+    <div class="official-store">
+      <div class="off-store-top">
+        <img src="assets/img/off-store.webp" alt="" id="of-img">
+        <p id="off-store-text">Official Store</p>
+      </div>
+      <div class="top-brand">
+        <img src="assets/img/top-brand.webp" alt="">
+      </div>
+      <div class="off-store-brand">
+        <img src="assets/img/official store/1.webp" alt="" id="item-off-store">
+        <img src="assets/img/official store/2.webp" alt="" id="item-off-store">
+        <img src="assets/img/official store/3.webp" alt="" id="item-off-store">
+        <img src="assets/img/official store/4.webp" alt="" id="item-off-store">
+        <img src="assets/img/official store/5.webp" alt="" id="item-off-store">
+      </div>
+    </div>
+    <!-- End Official Store Section -->
+
+    <!-- Top Product Section -->
+    <div class="top-content">
+      <div class="title-top-item">
+        <p id="title-top-item"><b>Paling top di Blibli </b> </p>
+      </div>
+      <div class="box-top-item">
+        <img src="assets/img/top-produk/1.webp" alt="" id="img-top-item">
+        <div class="tex">
+          <p id="desc-top-item">Redmi Note 9 (Sunset, 64GB, Garansi Resmi)</p>
+        </div>
+      </div>
+      <div class="box-top-item">
+        <img src="assets/img/top-produk/2.webp" alt="" id="img-top-item">
+        <div class="tex">
+          <p id="desc-top-item">Voucher Belanja Paket Diskon Sembako </p>
+        </div>
+      </div>
+      <div class="box-top-item">
+        <img src="assets/img/top-produk/3.webp" alt="" id="img-top-item">
+        <div class="tex">
+          <p id="desc-top-item">Doomos Diaplay Cooler Case Garansi 2 Tahun</p>
+        </div>
+      </div>
+      <div class="box-top-item">
+        <img src="assets/img/top-produk/4.webp" alt="" id="img-top-item">
+        <div class="tex">
+          <p id="desc-top-item">Sleek Bootle and Nipple Refil Cleaner</p>
+        </div>
+      </div>
+      <div class="box-top-item">
+        <img src="assets/img/top-produk/5.webp" alt="" id="img-top-item">
+        <div class="tex">
+          <p id="desc-top-item">BArco Minyak goreng Pounch [200ml]</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Product Section -->
+
+    <!-- Most Search Section -->
+    <div class="most-search">
+      <div class="most-top">
+        <div class="title">
+          <p id="most-title"> Paling Sering Dicari</p>
+        </div>
+        <div class="more">
+          <p id="most-more">Muat Lainnya</p>
+          <img src="assets/img/reload.png" alt="" id="reload-ico">
+        </div>
+      </div>
+      <div class="most-content">
+        <div class="most-item top-left">
+          <img src="assets/img/most/1.webp" alt="" id="img-most">
+          <p id="most-text1">Sex Toys</p>
+          <p id="most-text2">8.221 Produk</p>
+        </div>
+        <div class="most-item">
+          <img src="assets/img/most/2.webp" alt="" id="img-most">
+          <p id="most-text1">Whiskas</p>
+          <p id="most-text2">2.001 Produk</p>
+        </div>
+        <div class="most-item">
+          <img src="assets/img/most/3.webp" alt="" id="img-most">
+          <p id="most-text1">Daiya</p>
+          <p id="most-text2">1.223 Produk</p>
+        </div>
+        <div class="most-item top-right">
+          <img src="assets/img/most/4.webp" alt="" id="img-most">
+          <p id="most-text1">Zwitzsal</p>
+          <p id="most-text2">1.001 Produk</p>
+        </div>
+        <div class="most-item bottom-left">
+          <img src="assets/img/most/5.webp" alt="" id="img-most">
+          <p id="most-text1">Alat Kamera</p>
+          <p id="most-text2">8.221 Produk</p>
+        </div>
+        <div class="most-item">
+          <img src="assets/img/most/6.webp" alt="" id="img-most">
+          <p id="most-text1">Infinix Phone</p>
+          <p id="most-text2">8.221 Produk</p>
+        </div>
+        <div class="most-item">
+          <img src="assets/img/most/7.webp" alt="" id="img-most">
+          <p id="most-text1">Container</p>
+          <p id="most-text2">8.221 Produk</p>
+        </div>
+        <div class="most-item bottom-right">
+          <img src="assets/img/most/8.webp" alt="" id="img-most">
+          <p id="most-text1">Vitamin Black Moris</p>
+          <p id="most-text2">8.221 Produk</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Most Search Section -->
+
+    <!-- Popular Section -->
+    <div class="pop-content">
+      <div class="pop-item">
+        <div class="title-pop-item">
+          <p> <b> Kategori Populer</b></p>
+        </div>
+        <div class="box-pop-item">
+          <img src="assets/img/pop/1.webp" alt="" id="img-top-item">
+          <div class="tex">
+            <p id="desc-pop-item">Salon Profesional & Spa</p>
+          </div>
+        </div>
+        <div class="box-pop-item">
+          <img src="assets/img/pop/2.webp" alt="" id="img-top-item">
+          <div class="tex">
+            <p id="desc-pop-item">Aksesoris Kamera</p>
+          </div>
+        </div>
+        <div class="box-pop-item">
+          <img src="assets/img/pop/3.webp" alt="" id="img-top-item">
+          <div class="tex">
+            <p id="desc-pop-item">Jam Tangan</p>
+          </div>
+        </div>
+        <div class="box-pop-item">
+          <img src="assets/img/pop/4.webp" alt="" id="img-top-item">
+          <div class="tex">
+            <p id="desc-pop-item">Handphone</p>
+          </div>
+        </div>
+        <div class="box-pop-item">
+          <img src="assets/img/pop/5.webp" alt="" id="img-top-item">
+          <div class="tex">
+            <p id="desc-pop-item">Kulkas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Popular Section -->
+
+    <!-- Inspirasi Section -->
+    <div class="inspirasi">
+      <p id="inspirasi-title"> <b>Inspirasi belanja </b></p>
+      <div class="inspirasi-item">
+        <img src="assets/img/inspirasi/1.webp" alt="" id="inspirasi-img">
+      </div>
+      <div class="inspirasi-item">
+        <img src="assets/img/inspirasi/2.webp" alt="" id="inspirasi-img">
+      </div>
+      <div class="inspirasi-item">
+        <img src="assets/img/inspirasi/3.webp" alt="" id="inspirasi-img">
+      </div>
+    </div>
+    <!-- End Inspirasi Section -->
+
+    <!-- Nav2 Section -->
+    <div class="nav2">
+      <a href="" class="nav2-active">Rekomendasi Untuk Kamu</a>
+      <a href="" class="nav2-item">Pasca Banjir</a>
+      <a href="" class="nav2-item">Customer Goods</a>
+      <a href="" class="nav2-item">Lifestyle</a>
+      <a href="" class="nav2-item">Otomotif</a>
+      <a href="" class="nav2-item">Gadget & Aksesoris</a>
+      <a href="" class="nav2-item">Komputer</a>
+      <a href="" class="nav2-item">Aktifitas & Liburan</a>
+    </div>
+    <!-- End Nav2 Section -->
+
+    <!-- Random Product Section -->
+    <div class="random-section">
+      <div class="random-item">
+        <img src="assets/img/random/1.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Minyak Sania Premium</p>
+          <p id="harga-diskon">Rp159.000</p>
+          <p> <span id="harga-awal"> 165.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/2.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Rog Phone Case</p>
+          <p id="harga-diskon">Rp119.000</p>
+          <p> <span id="harga-awal"> 135.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/3.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Beras Sania 5KG</p>
+          <p id="harga-diskon">Rp55.000</p>
+          <p> <span id="harga-awal">Rp64.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/4.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Susu Dancow 800g</p>
+          <p id="harga-diskon">Rp77.000</p>
+          <p> <span id="harga-awal"> 100.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/6.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Rice Cooker CUCKOO</p>
+          <p id="harga-diskon">Rp159.000</p>
+          <p> <span id="harga-awal"> 165.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/5.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Koko Crunch</p>
+          <p id="harga-diskon">Rp45.000</p>
+          <p> <span id="harga-awal"> 50.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/1.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Minyak Sania Premium</p>
+          <p id="harga-diskon">Rp159.000</p>
+          <p> <span id="harga-awal"> 165.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/2.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Rog Phone Case</p>
+          <p id="harga-diskon">Rp119.000</p>
+          <p> <span id="harga-awal"> 135.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/3.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Beras Sania 5KG</p>
+          <p id="harga-diskon">Rp55.000</p>
+          <p> <span id="harga-awal">Rp64.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/4.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Susu Dancow 800g</p>
+          <p id="harga-diskon">Rp77.000</p>
+          <p> <span id="harga-awal"> 100.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/6.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Rice Cooker CUCKOO</p>
+          <p id="harga-diskon">Rp159.000</p>
+          <p> <span id="harga-awal"> 165.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/5.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Koko Crunch</p>
+          <p id="harga-diskon">Rp45.000</p>
+          <p> <span id="harga-awal"> 50.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/1.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Minyak Sania Premium</p>
+          <p id="harga-diskon">Rp159.000</p>
+          <p> <span id="harga-awal"> 165.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/2.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Rog Phone Case</p>
+          <p id="harga-diskon">Rp119.000</p>
+          <p> <span id="harga-awal"> 135.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/3.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Beras Sania 5KG</p>
+          <p id="harga-diskon">Rp55.000</p>
+          <p> <span id="harga-awal">Rp64.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/4.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Susu Dancow 800g</p>
+          <p id="harga-diskon">Rp77.000</p>
+          <p> <span id="harga-awal"> 100.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/6.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Rice Cooker CUCKOO</p>
+          <p id="harga-diskon">Rp159.000</p>
+          <p> <span id="harga-awal"> 165.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+      <div class="random-item">
+        <img src="assets/img/random/5.webp" alt="" id="random-item-img">
+        <div class="text-random">
+          <p id="title-random-item">Koko Crunch</p>
+          <p id="harga-diskon">Rp45.000</p>
+          <p> <span id="harga-awal"> 50.000</span> <span id="total-diskon">3% OFF</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- End Random Product Section -->
+  </div>
+  <hr class="line">
+  <div class="footer">
+    <div class="row">
+      <div class="col">
+        <b>
+          <p id="judul-footer">Bantuan</p>
+        </b>
+        <p>Pembayaran</p>
+        <p>Pembayaran</p>
+        <p>Status Pemesanan</p>
+        <p>Pengembalian Produk</p>
+        <p>Blibli Reward</p>
+        <p>Cara Berbelanja</p>
+        <p>Hubungi Kami</p>
+      </div>
+
+      <div class="col">
+        <b>
+          <p id="judul-footer">CUSTOMER CARE</p>
+        </b>
+        <p>Buka 24 Jam Setiap Hari</p>
+        <p id="phone-text"><img src="assets/img/phone.png" alt="" id="img-item-footer"> 0804 1 817 817</p>
+        <p id="mail-text"> <img src="assets/img/mail.png" alt="" id="img-item-footer"> customer.care@blibli.com
+        </p>
+        <div class="tombol-footer">
+          <a href="" id="link-footer">
+            <p> <b>Saya Butuh Bantuan</b> </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col">
+        <b>
+          <p id="judul-footer">Info Blibli</p>
+        </b>
+        <p>Tentang Blibli</p>
+        <p>Blog Blibli Friends</p>
+        <p>Siaran Pers</p>
+        <p>Kabar Terbaru</p>
+        <p>Daftar Brands</p>
+        <p>Karir</p>
+      </div>
+
+      <div class="col">
+        <b>
+          <p id="judul-footer">Kerja Sama Dengan Blibli</p>
+        </b>
+        <p>Affiliate Program</p>
+        <p>Jual di Blibli</p>
+        <p>B2B Program</p>
+        <p>Travel for Bussiness</p><br>
+        <b>
+          <p id="judul-footer">Blibli Family</p>
+        </b>
+        <div> <img src="assets/img/tiket.png" alt=""></div>
+        <div> <img src="assets/img/garasi.png" alt=""></div>
+        <div> <img src="assets/img/p-wisata.png" alt=""></div>
+      </div>
+
+      <div class="col">
+        <b>
+          <p id="judul-footer">Ikuti Kami</p>
+        </b>
+        <img src="assets/img/sosmed/1.png" alt="" class="ml5">
+        <img src="assets/img/sosmed/2.png" alt="" class="ml5">
+        <img src="assets/img/sosmed/3.png" alt="" class="ml5">
+        <img src="assets/img/sosmed/4.png" alt="" class="ml5">
+        <b>
+          <p id="judul-footer">unduh Aplikasi Kami</p>
+        </b>
+        <img src="assets/img/sosmed/5.png" alt="" class="ml5">
+        <img src="assets/img/sosmed/6.png" alt="" class="ml5">
+        <img src="assets/img/sosmed/7.png" alt="" class="ml5">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="assets/js/flickity.pkgd.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
